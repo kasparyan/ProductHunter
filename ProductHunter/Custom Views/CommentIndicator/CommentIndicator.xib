@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentIndicator" customModule="ProductHunter" customModuleProvider="target">
+            <connections>
+                <outlet property="commentsLb" destination="8AR-f2-gVm" id="wTu-cT-pCe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="448" height="261"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="msg_cloud" translatesAutoresizingMaskIntoConstraints="NO" id="gVe-zU-bWU">
+                    <rect key="frame" x="132.5" y="13" width="183" height="235"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="8AR-f2-gVm">
+                    <rect key="frame" x="173.5" y="107" width="101" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.058823529409999999" green="0.57647058819999997" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EAU-0p-pk1" userLabel="Bot">
+                    <rect key="frame" x="132.5" y="165.5" width="0.0" height="82.5"/>
+                    <color key="backgroundColor" red="0.17289228279999999" green="1" blue="0.14346787899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="SLh-uS-3j0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-oG-2Xu" userLabel="Top">
+                    <rect key="frame" x="132.5" y="13" width="0.0" height="70.5"/>
+                    <color key="backgroundColor" red="0.17289228279999999" green="1" blue="0.14346787899999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="29f-Kk-B6v"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EAU-0p-pk1" firstAttribute="height" secondItem="gVe-zU-bWU" secondAttribute="height" multiplier="0.35" id="3ns-Zd-gXN"/>
+                <constraint firstItem="gVe-zU-bWU" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.9" id="9Yo-5s-7am"/>
+                <constraint firstItem="gQq-oG-2Xu" firstAttribute="height" secondItem="gVe-zU-bWU" secondAttribute="height" multiplier="0.3" id="AST-AQ-S7b"/>
+                <constraint firstItem="gQq-oG-2Xu" firstAttribute="top" secondItem="gVe-zU-bWU" secondAttribute="top" id="Hlt-2U-JE1"/>
+                <constraint firstItem="8AR-f2-gVm" firstAttribute="centerX" secondItem="gVe-zU-bWU" secondAttribute="centerX" id="S7R-XT-fR4"/>
+                <constraint firstItem="8AR-f2-gVm" firstAttribute="centerY" secondItem="gVe-zU-bWU" secondAttribute="centerY" multiplier="0.9" id="WVA-p0-TGs"/>
+                <constraint firstItem="EAU-0p-pk1" firstAttribute="bottom" secondItem="gVe-zU-bWU" secondAttribute="bottom" id="avw-nU-1CR"/>
+                <constraint firstItem="gVe-zU-bWU" firstAttribute="width" secondItem="vUN-kp-3ea" secondAttribute="height" multiplier="1:1" id="cmc-3e-mqC"/>
+                <constraint firstItem="gVe-zU-bWU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gjE-Cm-C2Y"/>
+                <constraint firstItem="gVe-zU-bWU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hKm-Lb-3BT"/>
+                <constraint firstItem="gQq-oG-2Xu" firstAttribute="leading" secondItem="gVe-zU-bWU" secondAttribute="leading" id="rCQ-xj-os1"/>
+                <constraint firstItem="EAU-0p-pk1" firstAttribute="leading" secondItem="gVe-zU-bWU" secondAttribute="leading" id="v01-3k-hbl"/>
+                <constraint firstItem="8AR-f2-gVm" firstAttribute="width" secondItem="gVe-zU-bWU" secondAttribute="width" multiplier="0.55" id="zfh-GF-kQz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="156.52173913043478" y="-59.263392857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="msg_cloud" width="24" height="24"/>
+    </resources>
+</document>
